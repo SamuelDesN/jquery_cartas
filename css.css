@@ -1,0 +1,48 @@
+h1{
+    text-align: center;
+    font-size: 40px;
+}
+#buscar{
+    text-align: center;
+}
+#buscarPersona{
+    font-size: 10px;
+}
+#botonBuscarPersona{
+    font-size: 10px;
+}
+#personas{
+    display: grid;
+    grid-template-columns: repeat(4,30%);
+    padding-top: 5%;
+    width: 60%;
+    padding-left: 15%;
+    justify-content:space-around
+}
+.carta{
+    background-color: rgb(210, 206, 206);
+    padding:3%;
+    margin-top:7%;
+    border-radius: 16px;
+    width: 90%;
+    align-items: center;
+    display: grid;
+    grid-template-areas:    "imagen nombre nombre"
+                            "imagen apellido apellido"
+                            "desc desc desc";
+}
+.carta img{
+    padding-left: 10%;
+    width: 70%;
+    grid-area: imagen;
+}
+.carta .nombre{
+    grid-area: nombre;
+}
+.carta .apellido{
+    grid-area: apellido;
+}
+.carta .desc{
+    padding-left: 10%;
+    grid-area: desc;
+}
