@@ -1,8 +1,14 @@
-h1{
+body{
+    background-color: rgb(184, 179, 179);
+}h1{
     text-align: center;
     font-size: 40px;
 }
+.menu{
+    background-color: rgb(168, 166, 166);
+}
 #buscar{
+    background-color: rgb(184, 179, 179);
     text-align: center;
 }
 #buscarPersona{
@@ -28,7 +34,6 @@ h1{
     align-items: center;
     display: grid;
     grid-template-areas:    "imagen nombre nombre"
-                            "imagen apellido apellido"
                             "desc desc desc";
 }
 .carta img{
@@ -37,12 +42,14 @@ h1{
     grid-area: imagen;
 }
 .carta .nombre{
+    width: 100px;
     grid-area: nombre;
-}
-.carta .apellido{
-    grid-area: apellido;
+
 }
 .carta .desc{
     padding-left: 10%;
     grid-area: desc;
+}
+.carta p{
+    background-color: aliceblue;
 }
